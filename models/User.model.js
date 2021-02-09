@@ -1,7 +1,14 @@
-const { Schema, model } = require("mongoose");
+const mongoose = require("mongoose");
 
-// Define your schema
+// 1. Define your schema
+/*
+  The schema must have
+  name - Should be a string
+  email - Should be a String and must be required
+  password - Should be a String and muse be required
 
-// Define your model
+*/
 
-// Export your Model with 'module.exports'
+// 2. Define your model
+
+// 3. Export your Model with 'module.exports'
