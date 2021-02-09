@@ -8,7 +8,22 @@ const mongoose = require("mongoose");
   password - Should be a String and muse be required
 
 */
+let userSchema = new mongoose.Schema({
+  name: String,
+  email: {
+    type: String,
+    required: true
+  },
+  password : {
+    type: String,
+    required: true
+  }
+})
 
 // 2. Define your model
 
+let UserModel = mongoose.model('user', userSchema)
+
 // 3. Export your Model with 'module.exports'
+
+module.exports = UserModel
